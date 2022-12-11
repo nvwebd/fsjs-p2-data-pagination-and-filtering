@@ -33,7 +33,7 @@ const addSearchInput = () => {
     `<label for="search" class="student-search">
             <span>Search by name</span>
             <input id="search" placeholder="Search by name...">
-            <button type="button"><img src="img/icn-search.svg" alt="Search icon"></button>
+            <button type="button"><img src="/img/icn-search.svg" alt="Search icon"></button>
           </label>`
   );
 
@@ -139,14 +139,7 @@ const addPagination = (paginationList) => {
     }
   });
 
-  linkList.insertAdjacentHTML(
-    'beforeend',
-    `<li>
-                <button type="button" class="active">${1}</button>
-              </li>`
-  );
-
-  for (let i = 1; i < paginationLength; i++) {
+  for (let i = 0; i < paginationLength; i++) {
     linkList.insertAdjacentHTML(
       'beforeend',
       `<li>
